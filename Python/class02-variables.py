@@ -1,4 +1,5 @@
 # VARIABLES IN PYTHON____________________________________
+
 # Declaring and initializing variables
 name = "John"
 age = 25
