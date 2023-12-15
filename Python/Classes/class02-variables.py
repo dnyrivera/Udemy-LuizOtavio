@@ -48,3 +48,41 @@ imc = weight / (height ** 2)
 
 print(name_imc, "has an weight of", weight, "kg and height of",
       height, "and an IMC of", round(imc, 2))
+
+# Constants in Python____________________________________________
+speed = 44
+car_position = 100
+
+RADAR_1 = 60  # speed of radar 1
+RADAR_1_POS = 100  # position of radar 1
+RADAR_RANGE = 1  # radar range in meters
+
+fast_car = speed > RADAR_1
+car_radar_1_zone = car_position >= (RADAR_1_POS - RADAR_RANGE) and \
+    car_position <= (RADAR_1_POS + RADAR_RANGE)
+ticket_car = fast_car and car_radar_1_zone
+
+if fast_car:
+    print("Car is speeding")
+if car_radar_1_zone:
+    print("Car is in radar 1 zone")
+if ticket_car:
+    print("Car was ticketed as speeding in radar 1 zone")
+
+# Flags in Python_________________________________________________
+# None = no value / is and is not / id 
+# True = 1 / False = 0
+condition = True
+passed_in_the_if = None
+
+if condition:
+    passed_in_the_if = True
+    print("Entered the if:", passed_in_the_if)
+else:
+    passed_in_the_if = False
+    print("Entered the else", passed_in_the_if)
+
+if passed_in_the_if is None:
+    print("Entered the None", passed_in_the_if)
+else:
+    print("Entered the not None", passed_in_the_if)
