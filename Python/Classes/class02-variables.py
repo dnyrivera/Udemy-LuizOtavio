@@ -70,7 +70,7 @@ if ticket_car:
     print("Car was ticketed as speeding in radar 1 zone")
 
 # Flags in Python_________________________________________________
-# None = no value / is and is not / id 
+# None = no value / is and is not / id
 # True = 1 / False = 0
 condition = True
 passed_in_the_if = None
